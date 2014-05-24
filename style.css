@@ -1,0 +1,59 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-top: 12%;
+}
+.centered-content {
+  text-align: center;
+}
+.title {
+  color: #555;
+}
+.input-wrapper {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+.input-wrapper input {
+  padding: 10px 20px;
+  width: 100%;
+  font-family: Heveltica, Arial, sans-serif;
+  font-size: 20px;
+  border: 2px solid #efefef;
+  border-radius: 1000px;
+  transition: border .1s ease;
+  -moz-transition: border .1s ease;
+  -webkit-transition: border .1s ease;
+  -o-transition: border .1s ease;
+}
+.input-wrapper input.active {
+  border: 2px solid #4FC1A8;
+  transition: border .1s ease;
+  -moz-transition: border .1s ease;
+  -webkit-transition: border .1s ease;
+  -o-transition: border .1s ease;
+}
+.input-wrapper input:focus {
+  outline: none;
+}
+.input-wrapper label {
+  position: absolute;
+  top: 13px;
+  left: 40px;
+  padding: 0 4px;
+  font-size: 18px;
+  color: #dedede;
+  background: #fff;
+  transition: top .6s cubic-bezier(.49, -0.78, .49, 1.65);
+  -moz-transition: top .6s cubic-bezier(.49, -0.78, .49, 1.65);
+  -webkit-transition: top .6s cubic-bezier(.49, -0.78, .49, 1.65);
+  -o-transition: top .6s cubic-bezier(.49, -0.78, .49, 1.65);
+}
+.input-wrapper label.active {
+  top: -14px;
+  color: #4FC1A8;
+}
